@@ -1,0 +1,9 @@
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\bin\Debug\netcoreapp2.0\dominio.deps.json
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\bin\Debug\netcoreapp2.0\dominio.dll
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\bin\Debug\netcoreapp2.0\dominio.pdb
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.csprojResolveAssemblyReference.cache
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.csproj.CoreCompileInputs.cache
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.AssemblyInfoInputs.cache
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.AssemblyInfo.cs
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.dll
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.pdb

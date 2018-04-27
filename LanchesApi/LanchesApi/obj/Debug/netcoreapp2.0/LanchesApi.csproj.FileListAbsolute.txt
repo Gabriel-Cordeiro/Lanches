@@ -1,0 +1,15 @@
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\LanchesApi.deps.json
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\LanchesApi.runtimeconfig.json
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\LanchesApi.runtimeconfig.dev.json
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\LanchesApi.dll
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\LanchesApi.pdb
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\obj\Debug\netcoreapp2.0\LanchesApi.csprojResolveAssemblyReference.cache
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\obj\Debug\netcoreapp2.0\LanchesApi.csproj.CoreCompileInputs.cache
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\obj\Debug\netcoreapp2.0\LanchesApi.AssemblyInfoInputs.cache
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\obj\Debug\netcoreapp2.0\LanchesApi.AssemblyInfo.cs
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\obj\Debug\netcoreapp2.0\LanchesApi.dll
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\obj\Debug\netcoreapp2.0\LanchesApi.pdb
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\dominio.dll
+c:\users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\dominio.pdb
+C:\Users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\infraestrutura.memoria.dll
+C:\Users\gabriel.cordeiro\source\repos\LanchesApi\LanchesApi\bin\Debug\netcoreapp2.0\infraestrutura.memoria.pdb
