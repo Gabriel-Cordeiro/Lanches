@@ -1,9 +1,7 @@
 ﻿using dominio.interfaces.memoria;
 using dominio.interfaces.servicos;
 using dominio.models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace dominio.servicos
 {
@@ -16,14 +14,23 @@ namespace dominio.servicos
             _ingredientes = ingredientes;
         }
 
-        public IEnumerable<Ingrediente> PegarTodosIngredientes()
+        /// <summary>
+        /// Retorna todos os ingredientes criados da classe IngredienteDados.cs no projeto infraestrutura.memoria
+        /// </summary>
+        public List<Ingrediente> PegarTodosIngredientes()
         {
             return _ingredientes.PegarTodosIngredientes();
         }
 
+        /// <summary>
+        /// Retorna ingrediente por nome da classe IngredienteDados.cs no projeto infraestrutura.memoria
+        /// </summary>
+        /// <param name="lista Ingredientes"></param>
         public Ingrediente PegarIngredientePorNome(string NomeIngrendiente)
         {
             return _ingredientes.PegarIngredientePorNome(NomeIngrendiente);
         }
+
+
     }
 }

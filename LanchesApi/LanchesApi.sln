@@ -1,19 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LanchesApi", "LanchesApi\LanchesApi.csproj", "{9E29DC9E-4EA0-43A7-812E-61E3B8E09DE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LanchesApi", "LanchesApi\LanchesApi.csproj", "{9E29DC9E-4EA0-43A7-812E-61E3B8E09DE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{D5D42D82-18B4-4F15-B422-8F7573992853}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infraestrutura", "infraestrutura", "{0BBD1213-6C79-48E0-8B61-FA2022CCDD60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infraestrutura.memoria", "infraestrutura.memoria\infraestrutura.memoria.csproj", "{C4BA4559-3BBE-441A-9205-8045C78B1F45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "infraestrutura.memoria", "infraestrutura.memoria\infraestrutura.memoria.csproj", "{C4BA4559-3BBE-441A-9205-8045C78B1F45}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{0E16B71B-F347-4299-99D9-CA8F76C352FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dominio", "dominio\dominio.csproj", "{EE068B97-01D6-4247-BD75-34ED4FC74B30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dominio", "dominio\dominio.csproj", "{EE068B97-01D6-4247-BD75-34ED4FC74B30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testes", "testes", "{A2C5E5DA-BD17-4EEC-8911-5D4C23725B5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanches.Testes", "TestesApi\Lanches.Testes.csproj", "{3FD9D34B-0490-4274-9FA5-F72FB03CE77C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{EE068B97-01D6-4247-BD75-34ED4FC74B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE068B97-01D6-4247-BD75-34ED4FC74B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE068B97-01D6-4247-BD75-34ED4FC74B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD9D34B-0490-4274-9FA5-F72FB03CE77C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD9D34B-0490-4274-9FA5-F72FB03CE77C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD9D34B-0490-4274-9FA5-F72FB03CE77C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD9D34B-0490-4274-9FA5-F72FB03CE77C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{9E29DC9E-4EA0-43A7-812E-61E3B8E09DE9} = {D5D42D82-18B4-4F15-B422-8F7573992853}
 		{C4BA4559-3BBE-441A-9205-8045C78B1F45} = {0BBD1213-6C79-48E0-8B61-FA2022CCDD60}
 		{EE068B97-01D6-4247-BD75-34ED4FC74B30} = {0E16B71B-F347-4299-99D9-CA8F76C352FB}
+		{3FD9D34B-0490-4274-9FA5-F72FB03CE77C} = {A2C5E5DA-BD17-4EEC-8911-5D4C23725B5A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF441E6C-756B-471F-9CA8-7831A02026F3}

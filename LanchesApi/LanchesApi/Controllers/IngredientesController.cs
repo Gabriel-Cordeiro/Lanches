@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using dominio.interfaces.servicos;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LanchesApi.Controllers
 {
     //[Produces("application/json")]
-    
+
     public class IngredientesController : Controller
     {
         private readonly IIngredienteServico _ingrediente;
@@ -23,8 +19,17 @@ namespace LanchesApi.Controllers
         [Route("api/[controller]")]
         public IActionResult RetornaTodosIngredientes()
         {
-            var lstIngredientes = _ingrediente.PegarTodosIngredientes();
-            return StatusCode(200, lstIngredientes);
+            try
+            {
+                var lstIngredientes = _ingrediente.PegarTodosIngredientes();
+                return StatusCode(200, lstIngredientes);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, ex);
+            }
+
         }
     }
 }

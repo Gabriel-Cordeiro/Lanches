@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.IO;
 using dominio.interfaces.memoria;
 using dominio.interfaces.servicos;
-using dominio.servicos;
 using dominio.servicos;
 using infraestrutura.memoria;
 using infraestrutura.memoria.repositorio;
@@ -13,8 +8,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace LanchesApi
 {

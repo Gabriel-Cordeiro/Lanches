@@ -1,9 +1,7 @@
 ﻿using dominio.interfaces.memoria;
 using dominio.models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using static dominio.models.Ingrediente;
 using static dominio.models.Lanche;
 
@@ -36,8 +34,8 @@ namespace infraestrutura.memoria.repositorio
                 NomeLanche = enumLanches.XBurguer.ToString(),
                 Ingredientes = new List<Ingrediente>
                 {
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.HamburguerCarne.ToString()),
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.Queijo.ToString())
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.HamburguerCarne),
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.Queijo)
                 },
             };
 
@@ -75,9 +73,9 @@ namespace infraestrutura.memoria.repositorio
                 NomeLanche = enumLanches.XEgg.ToString(),
                 Ingredientes = new List<Ingrediente>
                 {
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.HamburguerCarne.ToString()),
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.Queijo.ToString()),
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.Ovo.ToString())
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.HamburguerCarne),
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.Queijo),
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.Ovo)
                 },
             };
 
@@ -95,10 +93,10 @@ namespace infraestrutura.memoria.repositorio
                 NomeLanche = enumLanches.XEggBacon.ToString(),
                 Ingredientes = new List<Ingrediente>
                 {
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.HamburguerCarne.ToString()),
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.Queijo.ToString()),
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.Ovo.ToString()),
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.Bacon.ToString())
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.HamburguerCarne),
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.Queijo),
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.Ovo),
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.Bacon)
                 },
             };
 

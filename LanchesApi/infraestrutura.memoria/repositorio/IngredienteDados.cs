@@ -1,9 +1,7 @@
 ﻿using dominio.interfaces.memoria;
 using dominio.models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using static dominio.models.Ingrediente;
 
 namespace infraestrutura.memoria

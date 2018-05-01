@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using dominio.interfaces.servicos;
 using dominio.models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace LanchesApi.Controllers
 {
@@ -29,8 +24,16 @@ namespace LanchesApi.Controllers
         [Route("api/Lanches")]
         public IActionResult RetornaTodoslanches()
         {
-            var lstLanches = _lancheServico.PegarTodosLanchesProntos();
-            return StatusCode(200, lstLanches);
+            try
+            {
+                var lstLanches = _lancheServico.PegarTodosLanchesProntos();
+                return StatusCode(200, lstLanches);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex);
+            }
+
         }
 
 
@@ -38,16 +41,31 @@ namespace LanchesApi.Controllers
         [Route("api/Customizado")]
         public IActionResult RetornaLancheCustomizado([FromBody] List<Ingrediente> lstQtdIngredientes)
         {
-            List<Ingrediente> lstingredientes = new List<Ingrediente>();
-            lstQtdIngredientes.ForEach(x =>
+            if (lstQtdIngredientes == null)
             {
-                lstingredientes.Add(_ingredienteServico.PegarIngredientePorNome(x.NomeIngrediente));
-            });
-            
-            var lancheCustomizado = _lancheServico.MontarLancheCustomizado(lstingredientes);
-            return StatusCode(200, lancheCustomizado);
-        }
+                return BadRequest( new {erro = "Não foram enviados nenhuma informação de ingredientes" });
+                }
+            else
+            {
+                try
+                {
+                    List<Ingrediente> lstingredientes = new List<Ingrediente>();
+                    lstQtdIngredientes.ForEach(x =>
+                    {
+                        lstingredientes.Add(_ingredienteServico.PegarIngredientePorNome(x.NomeIngrediente));
+                    });
 
+                    var lancheCustomizado = _lancheServico.MontarLancheCustomizado(lstingredientes);
+                    return Ok(lancheCustomizado);
+                }
+                catch (Exception)
+                {
+
+                    return BadRequest(new { erro = "Erro ao tentar buscar ingredientes, verifique os dados enviados" });
+                }
+
+            }
+        }
 
     }
 }

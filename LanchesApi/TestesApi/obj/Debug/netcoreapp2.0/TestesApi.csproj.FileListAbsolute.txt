@@ -1,0 +1,14 @@
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\bin\Debug\netcoreapp2.0\TestesApi.deps.json
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\bin\Debug\netcoreapp2.0\TestesApi.runtimeconfig.json
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\bin\Debug\netcoreapp2.0\TestesApi.runtimeconfig.dev.json
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\bin\Debug\netcoreapp2.0\TestesApi.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\bin\Debug\netcoreapp2.0\TestesApi.pdb
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\obj\Debug\netcoreapp2.0\TestesApi.csprojResolveAssemblyReference.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\obj\Debug\netcoreapp2.0\TestesApi.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\obj\Debug\netcoreapp2.0\TestesApi.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\obj\Debug\netcoreapp2.0\TestesApi.AssemblyInfo.cs
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\obj\Debug\netcoreapp2.0\TestesApi.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\TestesApi\obj\Debug\netcoreapp2.0\TestesApi.pdb
