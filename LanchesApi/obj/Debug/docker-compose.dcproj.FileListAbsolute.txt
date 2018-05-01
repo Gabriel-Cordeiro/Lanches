@@ -1,0 +1,1 @@
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache

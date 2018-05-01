@@ -1,0 +1,12 @@
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\bin\Release\netcoreapp2.0\infraestrutura.memoria.deps.json
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\bin\Release\netcoreapp2.0\infraestrutura.memoria.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\bin\Release\netcoreapp2.0\infraestrutura.memoria.pdb
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\bin\Release\netcoreapp2.0\dominio.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\bin\Release\netcoreapp2.0\dominio.pdb
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\obj\Release\netcoreapp2.0\infraestrutura.memoria.csprojResolveAssemblyReference.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\obj\Release\netcoreapp2.0\infraestrutura.memoria.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\obj\Release\netcoreapp2.0\infraestrutura.memoria.AssemblyInfoInputs.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\obj\Release\netcoreapp2.0\infraestrutura.memoria.AssemblyInfo.cs
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\obj\Release\netcoreapp2.0\infraestrutura.memoria.csproj.CopyComplete
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\obj\Release\netcoreapp2.0\infraestrutura.memoria.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\infraestrutura.memoria\obj\Release\netcoreapp2.0\infraestrutura.memoria.pdb

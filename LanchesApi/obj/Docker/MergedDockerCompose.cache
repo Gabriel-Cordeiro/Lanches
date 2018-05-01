@@ -1,0 +1,11 @@
+services:
+  lanchesapi:
+    build:
+      context: C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi
+      dockerfile: LanchesApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: lanchesapi
+    ports:
+    - 80/tcp
+version: '3.0'

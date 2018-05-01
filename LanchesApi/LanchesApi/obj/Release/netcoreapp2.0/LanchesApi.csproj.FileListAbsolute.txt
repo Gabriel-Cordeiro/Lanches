@@ -1,0 +1,16 @@
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\LanchesApi.deps.json
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\LanchesApi.runtimeconfig.json
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\LanchesApi.runtimeconfig.dev.json
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\LanchesApi.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\LanchesApi.pdb
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\dominio.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\infraestrutura.memoria.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\dominio.pdb
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\bin\Release\netcoreapp2.0\infraestrutura.memoria.pdb
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\obj\Release\netcoreapp2.0\LanchesApi.csprojResolveAssemblyReference.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\obj\Release\netcoreapp2.0\LanchesApi.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\obj\Release\netcoreapp2.0\LanchesApi.AssemblyInfoInputs.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\obj\Release\netcoreapp2.0\LanchesApi.AssemblyInfo.cs
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\obj\Release\netcoreapp2.0\LanchesApi.csproj.CopyComplete
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\obj\Release\netcoreapp2.0\LanchesApi.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\LanchesApi\obj\Release\netcoreapp2.0\LanchesApi.pdb

@@ -1,0 +1,9 @@
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\bin\Release\netcoreapp2.0\dominio.deps.json
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\bin\Release\netcoreapp2.0\dominio.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\bin\Release\netcoreapp2.0\dominio.pdb
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\obj\Release\netcoreapp2.0\dominio.csprojResolveAssemblyReference.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\obj\Release\netcoreapp2.0\dominio.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\obj\Release\netcoreapp2.0\dominio.AssemblyInfoInputs.cache
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\obj\Release\netcoreapp2.0\dominio.AssemblyInfo.cs
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\obj\Release\netcoreapp2.0\dominio.dll
+C:\Users\gabriel.cordeiro\Documents\GitHub\lanches\Lanches\LanchesApi\dominio\obj\Release\netcoreapp2.0\dominio.pdb
