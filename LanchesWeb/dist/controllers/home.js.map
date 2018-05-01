@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/app/controllers/home.js"],"names":["index","app","req","res","render"],"mappings":";;;;;QAAgBA,K,GAAAA,K;AAAT,SAASA,KAAT,CAAeC,GAAf,EAAoBC,GAApB,EAAyBC,GAAzB,EAA8B;AACjCA,QAAIC,MAAJ,CAAW,YAAX;AACH","file":"home.js","sourcesContent":["export function index(app, req, res) {\r\n    res.render('home/index')\r\n}"]}
