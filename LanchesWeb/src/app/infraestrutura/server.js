@@ -1,21 +1,21 @@
-import express from 'express'
-import consign from 'consign'
-import bodyParser from 'body-parser'
-import expressValidator from 'express-validator'
+const express = require('express')
+const consign = require('consign')
+const bodyParser = require('body-parser')
+const expressValidator = require('express-validator')
 
 
 const app = express()
 app.set('view engine', 'ejs')
-app.set('views', './src/app/views')
+app.set('views', './views')
 
-app.use(express.static('./src/app/public'))
+app.use(express.static('./public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(expressValidator())
 
 consign()
-    .include('src/app/routes')
-    .then('src/app/models')
-    .then('src/app/controllers')
+    .include('./routes')
+    .then('./models')
+    .then('./controllers')
     .into(app)
 
-export default app
+module.exports = app

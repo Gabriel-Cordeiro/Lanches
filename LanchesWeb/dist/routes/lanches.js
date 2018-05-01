@@ -8,5 +8,9 @@ module.exports = function (app) {
     app.get('/customizados', function (req, res) {
         app.src.app.controllers.lanches.lanchesCustomizados(app, req, res);
     });
+
+    app.post('/calcularCustomizado', function (req, res) {
+        app.src.app.controllers.lanches.CalcularlancheCustomizado(app, req, res);
+    });
 };
 //# sourceMappingURL=lanches.js.map

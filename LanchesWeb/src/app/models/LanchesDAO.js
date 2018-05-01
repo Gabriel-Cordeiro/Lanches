@@ -1,8 +1,7 @@
-import request from 'request'
-import http from 'http'
+const request = require('request')
+const http = require('http')
 
-function LanchesDAO(){
-
+function LanchesDAO() {
 }
 
 LanchesDAO.prototype.pegarTodosLanches = (cb) => {
@@ -14,7 +13,7 @@ LanchesDAO.prototype.pegarTodosLanches = (cb) => {
 
 }
 
-LanchesDAO.prototype.pegarValosLanchesCustomizado = (dadosLanche, callback) => {
+LanchesDAO.prototype.pegarValoresLanchesCustomizado = (dadosLanche, callback) => {
     let options = {
         hostname: 'localhost',
         port: 52495,

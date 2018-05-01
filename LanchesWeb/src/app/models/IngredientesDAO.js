@@ -1,6 +1,6 @@
-import request from 'request'
+const request = require('request')
 
-function IngredientesDAO(){
+function IngredientesDAO() {
 }
 
 IngredientesDAO.prototype.pegarTodosIngredientes = (cb) => {

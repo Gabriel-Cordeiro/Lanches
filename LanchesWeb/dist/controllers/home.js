@@ -1,12 +1,10 @@
 'use strict';
 
-// const index = (app, req, res) => {
-//     res.render('home/index')
-// }
-
-// export default index
-
-module.exports.index = function (app, req, res) {
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.index = index;
+function index(app, req, res) {
     res.render('home/index');
-};
+}
 //# sourceMappingURL=home.js.map

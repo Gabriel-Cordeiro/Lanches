@@ -21,50 +21,58 @@
 </head>
 
 <script>	
-	$(document).ready(function () {
-		$('.btn').click(function () {
-			var NomeLanche = $(this).closest('.dados_lanches').find('.nome_lanche').text().trim()
-			var textValor = $(this).closest('.dados_lanches').find('.lanche_valor').text().trim()
-			var valorLanche = parseFloat(textValor, 10);
-			if (!isNaN(valorLanche)) {
-				var row = $('<tr>');
-				var colunas = "";
-				colunas += "<td> " + NomeLanche + "</td>"
-				colunas += "<td> " + valorLanche + "</td>"
-				colunas += "<td><button type='button' class='btnRetirar btn btn-danger' id='btnRetirar'>Retirar</button></td></tr>"
-				row.append(colunas);
+        $(document).ready(function () {
+            $('.btn').click(function () {             
+                var NomeLanche = $(this).closest('.dados_lanches').find('.nome_lanche').text().trim()
+                var textValor = $(this).closest('.dados_lanches').find('.lanche_valor').text().trim()
+                var valorLanche = parseFloat(textValor, 10);
+                if (!isNaN(valorLanche)) {
+                    var row = $('<tr>');
+                    var colunas = "";
+                    colunas += "<td> " + NomeLanche + "</td>"
+                    colunas += "<td> " + valorLanche + "</td>"
+                    colunas += "<td><button type='button' class='btnRetirar btn btn-danger' id='btnRetirar'>Retirar</button></td></tr>"
+                    row.append(colunas);
 
-				var valorAtual = parseFloat($('#total').text(), 10);
-				var valorFinal = valorAtual + valorLanche;
+                    var valorAtual = parseFloat($('#total').text(), 10);
+                    var valorFinal = valorAtual + valorLanche;
 
-				$('#total').empty();
-				$('#total').append(valorFinal);
-				$('#tb_carrinho').append(row);
-			}
-		});
-	});
+                    $('#total').empty();
+                    $('#total').append(valorFinal.toFixed(2));
+                    $('#tb_carrinho').append(row);
+                }
+            });
+        });
 
-	$(document).ready(function () {
-		$('#tb_carrinho').on('click', '.btnRetirar', function () {
-			var rowClick = $(this).closest("tr");
-			var valorFinal = parseFloat($('#total').text(), 10) - parseFloat(rowClick.find("td:eq(1)").text());
-			$('#total').empty();
-			$('#total').append(valorFinal);
-			$(this).closest('tr').remove();
-		});
-	});
+        $(document).ready(function () {
+            $('#tb_carrinho').on('click', '.btnRetirar', function () {         
+                var rowClick = $(this).closest("tr");
+                var valorFinal = parseFloat($('#total').text(), 10) - parseFloat(rowClick.find("td:eq(1)").text()).toFixed(2);
+                if(valorFinal <0){
+                $('#total').empty();
+                $('#total').append(0);
+                }
+                else {
+                    $('#total').empty();
+                    $('#total').append(valorFinal.toFixed(2));
+                }
+    
+                $(this).closest('tr').remove();
+            });
+        });
 
 	$(document).ready(function () {
 		$('.btnComprar').click(function () {
-			$('#modal').empty();
-			$('#modal').append($('#total').text())
+			$('#modal').html($('<p class="text-success">Confirmar compra no valor de R$: </p>').text());
+			$('#modal').append($('#total').text());
 		});
 	});
 
-	function limparDadosCarrinho() {
-		$('#total').empty();
-		$('#tb_carrinho').empty();
-	}
+        function limparDadosCarrinho() {
+            $('#total').empty();
+            $('#tb_carrinho tbody').remove();
+            $('#total').append(0);
+        } 
 
 
 </script>
@@ -94,30 +102,10 @@
 		</div>
 	</nav>
 	<div class="container">
-			<div style="float: right;">
-				<div class="col-sm-6">
-					<fieldset id="carrinho" class="carrinho">
-						<legend>Seus Pedidos</legend>
-						<table class="table" id='tb_carrinho'>
-							<thead>
-								<tr>
-									<th>Nome</th>
-									<th>Preço</th>
-									<th>Retirar</th>
-								</tr>
-							</thead>
-							<tbody>
-							</tbody>
-						</table>Total:
-						<div id="total">0</div>
-						<button type="button" class="btnComprar btn btn-success" data-toggle="modal" data-target="#myModal">Comprar</button>
-					</fieldset>
-				</div>
-			</div>
 		<%if(arrayLanches.length > 0){%>
+			<div class="col-md-7">
 			<%for (var i=0; i < arrayLanches.length; i++ ) {%>
 				<div class="row">
-					<div class="col-md-6">
 						<div class="dados_lanches">
 							<span class="codigo_lanche">
 								Codigo:
@@ -141,24 +129,41 @@
 
 							<button type="button" class="btn btn-success" id="btnTeste">Adicionar</button>
 						</div>
-					</div>
 				</div>
 				<%}%>
-					<%}%>
+			</div>
+					<%}%>				
+					<div class="col-md-4">
+							<fieldset id="carrinho" class="carrinho">
+								<legend>Seus Pedidos</legend>
+								<table class="table" id='tb_carrinho'>
+									<thead>
+										<tr>
+											<th>Nome</th>
+											<th>Preço</th>
+											<th>Retirar</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>Total:
+								<div id="total">0</div>
+								<button type="button" class="btnComprar btn btn-success" data-toggle="modal" data-target="#myModal">Comprar</button>
+							</fieldset>
+						</div>
 	</div>
 	<div class="container">
 
 	</div>
-	<!-- MOdal -->
+	<!-- Modal -->
 	<div id="myModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
-
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h4 class="modal-title">Confirmar Compra ?</h4>
-				</div> Confirmar compra no valor de R$:
+				</div>
 				<div class="modal-body" id="modal"></div>
 				<div class="modal-footer">
 					<button type="button" class="btnConfirmar btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#modalFinal"
@@ -175,7 +180,7 @@
 		<div class="modal-dialog">
 			<!-- Modal content-->
 			<div class="alert alert-success">
-				<strong>Sucesso!</strong> Sua compra foi realizada com sucesso.
+				<strong>Sucesso!</strong> Sua compra foi realizada.
 			</div>
 		</div>
 	</div>

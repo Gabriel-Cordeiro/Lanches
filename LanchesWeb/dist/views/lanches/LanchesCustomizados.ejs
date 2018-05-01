@@ -21,7 +21,6 @@
 </head>
 
 <body>
-
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -46,20 +45,40 @@
 		</div>
 	</nav>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="row escolha_lanche">
-					<button type="button" class="btn btn-default">
-						<a href="">Lanches Prontos</a>
-					</button>
-				</div>
-				<div class="row escolha_lanche">
-					<button type="button" class="btn btn-default">
-						<a href="">Lanches Customizados</a>
-					</button>
-				</div>
-			</div>
-		</div>
+		<form action="/calcularCustomizado" method="POST" name ='formteste' >
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">Código</th>
+						<th scope="col">Ingrediente</th>
+						<th scope="col">Preço unitário R$</th>
+						<th scope="col">Quantidade</th>
+					</tr>
+				</thead>
+				<tbody>
+					<%if(arrayIngredientes.length > 0){%>
+						<%for (var i=0; i < arrayIngredientes.length; i++ ) {%>
+							<tr>
+								<td>
+									<%=arrayIngredientes[i].codigoIngrediente%>
+								</td>
+								<td>
+									<%=arrayIngredientes[i].nomeIngrediente%>
+								</td>
+								<td>
+									<%=arrayIngredientes[i].valorIngrediente%>
+								</td>
+								<td>
+									<input type="number" name="<%=arrayIngredientes[i].nomeIngrediente%>" min="0" max="99" value="0">
+								</td>
+							</tr>
+							<%}%>
+								<%}%>
+				</tbody>
+			</table>
+			<button type="submit" class="btnCalcular btn btn-success" id="btnTeste">Calcular</button>
+		</form>
+
 	</div>
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"

@@ -1,6 +1,6 @@
 const lanchesProntos = (app, req, res) => {
 
-    let LanchesModel = new app.src.app.models.LanchesDAO()
+    let LanchesModel = new app.models.LanchesDAO()
     LanchesModel.pegarTodosLanches((err, cb) => {
         let arrayLanches = JSON.parse(cb.body)
         res.render('lanches/lanchesProntos', { arrayLanches })
@@ -9,7 +9,7 @@ const lanchesProntos = (app, req, res) => {
 
 
 const lanchesCustomizados = (app, req, res) => {
-    let ingredientesModel = new app.src.app.models.IngredientesDAO()
+    let ingredientesModel = new app.models.IngredientesDAO()
     ingredientesModel.pegarTodosIngredientes((err, cb) => {
         let arrayIngredientes = JSON.parse(cb.body)
         res.render('lanches/LanchesCustomizados', { arrayIngredientes })
@@ -29,16 +29,14 @@ const CalcularlancheCustomizado = (app, req, res) => {
     })
 
     let jsonResult = JSON.stringify(result)
-    let lanchesModel = new app.src.app.models.LanchesDAO()
+    let lanchesModel = new app.models.LanchesDAO()
 
-    lanchesModel.pegarValosLanchesCustomizado(jsonResult, function (dadosLancheCustomizado){
+    lanchesModel.pegarValoresLanchesCustomizado(jsonResult, function (dadosLancheCustomizado){
         let arrayLanche = JSON.parse(dadosLancheCustomizado)
         res.render('lanches/LancheCustomizadoVenda', { arrayLanche })
 
     })
-
 }
-
 
 module.exports = {
     lanchesProntos,

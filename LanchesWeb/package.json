@@ -4,10 +4,7 @@
   "description": "App em nodejs para consumir a Api LanchesApi ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -w src/app --exec \"babel-node src/app --presets env\"",
-    "build": "rimraf dist &&  babel src/app -s -D -d dist --presets env",
-    "start": "node dist/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "GabrielCordeiro",
   "license": "ISC",

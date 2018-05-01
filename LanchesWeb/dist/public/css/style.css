@@ -51,3 +51,7 @@ a:hover{
     margin: 0;
     border: 0;
 }
+
+.btnCalcular{
+   float: right;
+}
