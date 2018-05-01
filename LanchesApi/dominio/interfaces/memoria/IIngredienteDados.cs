@@ -10,5 +10,7 @@ namespace dominio.interfaces.memoria
         List<Ingrediente> PegarTodosIngredientes();
 
         Ingrediente PegarIngredientePorNome(string nome);
+
+        Ingrediente PegarIngredientePorCodigo(int codigo);
     }
 }

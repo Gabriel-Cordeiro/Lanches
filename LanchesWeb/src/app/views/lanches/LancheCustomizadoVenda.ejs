@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Lanches startup</title>
+
+    <!-- JQuery -->
+    <script src="js/jquery-2.2.1.js"></script>
+
+    <!-- bootstrap - link cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+    <!-- incluindo css -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/burguerico.png" />
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <img src="images/Burguers.png" />
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>	
+        $(document).ready(function () {
+            $('.btn').click(function () {
+                var NomeLanche = $(this).closest('.dados_lanches').find('.nome_lanche').text().trim()
+                var textValor = $(this).closest('.dados_lanches').find('.lanche_valor').text().trim()
+                var valorLanche = parseFloat(textValor, 10);
+                if (!isNaN(valorLanche)) {
+                    var row = $('<tr>');
+                    var colunas = "";
+                    colunas += "<td> " + NomeLanche + "</td>"
+                    colunas += "<td> " + valorLanche + "</td>"
+                    colunas += "<td><button type='button' class='btnRetirar btn btn-danger' id='btnRetirar'>Retirar</button></td></tr>"
+                    row.append(colunas);
+    
+                    var valorAtual = parseFloat($('#total').text(), 10);
+                    var valorFinal = valorAtual + valorLanche;
+    
+                    $('#total').empty();
+                    $('#total').append(valorFinal);
+                    $('#tb_carrinho').append(row);
+                }
+            });
+        });
+    
+        $(document).ready(function () {
+            $('#tb_carrinho').on('click', '.btnRetirar', function () {
+                var rowClick = $(this).closest("tr");
+                var valorFinal = parseFloat($('#total').text(), 10) - parseFloat(rowClick.find("td:eq(1)").text());
+                $('#total').empty();
+                $('#total').append(valorFinal);
+                $(this).closest('tr').remove();
+            });
+        });
+    
+        $(document).ready(function () {
+            $('.btnComprar').click(function () {
+                $('#modal').empty();
+                $('#modal').append($('#total').text())
+            });
+        });
+    
+        function limparDadosCarrinho() {
+            $('#total').empty();
+            $('#tb_carrinho').empty();
+        }   
+    </script>
+    <div class="container">
+            <div class="col-md-7">
+                    <div class="row">
+                        <div class="dados_lanches">
+                            <span class="codigo_lanche">
+                                Codigo:
+                                <%=arrayLanche.codigo%>
+                            </span>
+                            <span class="nome_lanche">
+                                <%=arrayLanche.nomeLanche%>
+                            </span>
+                            <span class="nome_ingrediente">
+                                Ingredientes:
+                                <%for (var i=0; i < arrayLanche.ingredientes.length; i++ ) {%>
+                                    <%=arrayLanche.ingredientes[i].nomeIngrediente%> ,
+                                        <%}%>
+                            </span>
+                            <br />
+                            <p id="teste"> Preço:
+                                <span class="lanche_valor">
+                                    <%=arrayLanche.valor%>
+                                </span>
+                            </p>
+
+                            <button type="button" class="btn btn-success" id="btnTeste">Adicionar</button>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-md-4">
+                    <fieldset id="carrinho" class="carrinho">
+                        <legend>Seus Pedidos</legend>
+                        <table class="table" id='tb_carrinho'>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Preço</th>
+                                    <th>Retirar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>Total:
+                        <div id="total">0</div>
+                        <button type="button" class="btnComprar btn btn-success" data-toggle="modal" data-target="#myModal">Comprar</button>
+                    </fieldset>
+                </div>
+                <div class="col-md-6">
+                        <%if(arrayLanche.descontoLight == true) {%>
+                            <div class="alert alert-info">
+                                <strong>Desconto Light!</strong> O lanche que você montou possui Alface e não tem Bacon, então você ganhou 10% de desconto
+                                no valor do lanche (valor já aplicado).
+                            </div>
+                        <%}%>
+                      
+                        <%if(arrayLanche.descontoLight == true) {%>
+                            <div class="alert alert-info">
+                                <strong>Desconto Muita Coisa!</strong> O lanche que você montou possui mais de 3 Hambúrgueres e/ou Queijo, e a cada 3 itens você paga apenas 2 (valor já aplicado).
+                            </div>
+                        <%}%>
+                    </div>
+    </div>
+    <div class="container">
+
+    </div>
+    <!-- MOdal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Confirmar Compra ?</h4>
+                </div> Confirmar compra no valor de R$:
+                <div class="modal-body" id="modal"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btnConfirmar btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#modalFinal"
+                        onclick="limparDadosCarrinho()">Confirmar</button>
+                    <button type="button" class="btnCloseModal btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal final compra -->
+    <div id="modalFinal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="alert alert-success">
+                <strong>Sucesso!</strong> Sua compra foi realizada com sucesso.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

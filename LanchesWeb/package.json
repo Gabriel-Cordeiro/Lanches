@@ -1,0 +1,30 @@
+{
+  "name": "lanchesweb",
+  "version": "1.0.0",
+  "description": "App em nodejs para consumir a Api LanchesApi ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -w src/app --exec \"babel-node src/app --presets env\"",
+    "build": "rimraf dist &&  babel src/app -s -D -d dist --presets env",
+    "start": "node dist/index.js"
+  },
+  "author": "GabrielCordeiro",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.18.2",
+    "consign": "^0.1.6",
+    "ejs": "^2.5.9",
+    "eslint": "^4.19.1",
+    "express": "^4.16.3",
+    "express-validator": "^3.2.0",
+    "nodemon": "^1.17.3",
+    "request": "^2.85.0",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}

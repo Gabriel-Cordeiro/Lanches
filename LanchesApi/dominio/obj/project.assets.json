@@ -664,7 +664,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabriel.cordeiro\\.nuget\\packages\\": {},
+    "C:\\Users\\gabri\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -673,17 +673,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel.cordeiro\\source\\repos\\LanchesApi\\dominio\\dominio.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Documents\\GitHub\\Lanches\\LanchesApi\\dominio\\dominio.csproj",
       "projectName": "dominio",
-      "projectPath": "C:\\Users\\gabriel.cordeiro\\source\\repos\\LanchesApi\\dominio\\dominio.csproj",
-      "packagesPath": "C:\\Users\\gabriel.cordeiro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel.cordeiro\\source\\repos\\LanchesApi\\dominio\\obj\\",
+      "projectPath": "C:\\Users\\gabri\\Documents\\GitHub\\Lanches\\LanchesApi\\dominio\\dominio.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gabri\\Documents\\GitHub\\Lanches\\LanchesApi\\dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gabriel.cordeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

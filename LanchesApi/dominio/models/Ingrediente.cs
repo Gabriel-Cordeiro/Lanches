@@ -2,15 +2,16 @@
 {
     public class Ingrediente
     {
+        public int CodigoIngrediente { get; set; }
         public string NomeIngrediente { get; set; }
         public decimal ValorIngrediente { get; set; }
-        public enum enumIngredientes
+        public enum enumIngredientes : int
         {
-            Alface = 0,
-            Bacon = 1,
-            HamburguerCarne = 2,
-            Ovo = 3,
-            Queijo = 4
+            Alface = 1,
+            Bacon,
+            HamburguerCarne,
+            Ovo,
+            Queijo
         }
     }
 }

@@ -9,3 +9,14 @@ c:\users\gabriel.cordeiro\source\repos\LanchesApi\infraestrutura.memoria\obj\Deb
 c:\users\gabriel.cordeiro\source\repos\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.AssemblyInfo.cs
 c:\users\gabriel.cordeiro\source\repos\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.dll
 c:\users\gabriel.cordeiro\source\repos\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.pdb
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\bin\Debug\netcoreapp2.0\infraestrutura.memoria.deps.json
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\bin\Debug\netcoreapp2.0\infraestrutura.memoria.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\bin\Debug\netcoreapp2.0\infraestrutura.memoria.pdb
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\bin\Debug\netcoreapp2.0\dominio.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\bin\Debug\netcoreapp2.0\dominio.pdb
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.csprojResolveAssemblyReference.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.AssemblyInfo.cs
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\infraestrutura.memoria\obj\Debug\netcoreapp2.0\infraestrutura.memoria.pdb

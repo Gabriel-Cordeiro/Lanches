@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/app/index.js"],"names":["app","listen","console","log"],"mappings":";;AAAA;;;;;;AAEAA,iBAAIC,MAAJ,CAAW,IAAX,EAAiB,YAAM;AACnBC,YAAQC,GAAR,CAAY,sBAAZ;AACH,CAFD","file":"index.js","sourcesContent":["import app from './infraestrutura/server'\r\n\r\napp.listen(8090, () => {\r\n    console.log('Running on port 8090')\r\n})"]}

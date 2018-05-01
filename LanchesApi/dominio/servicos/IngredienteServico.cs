@@ -20,5 +20,10 @@ namespace dominio.servicos
         {
             return _ingredientes.PegarTodosIngredientes();
         }
+
+        public Ingrediente PegarIngredientePorNome(string NomeIngrendiente)
+        {
+            return _ingredientes.PegarIngredientePorNome(NomeIngrendiente);
+        }
     }
 }

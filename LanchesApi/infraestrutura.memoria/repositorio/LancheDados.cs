@@ -41,7 +41,7 @@ namespace infraestrutura.memoria.repositorio
                 },
             };
 
-            xBurguer.Total = xBurguer.Ingredientes.Sum(x => x.ValorIngrediente);
+            xBurguer.Valor = xBurguer.Ingredientes.Sum(x => x.ValorIngrediente);
 
             return xBurguer;
 
@@ -55,13 +55,13 @@ namespace infraestrutura.memoria.repositorio
                 NomeLanche = enumLanches.XBacon.ToString(),
                 Ingredientes = new List<Ingrediente>
                 {
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.HamburguerCarne.ToString()),
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.Queijo.ToString()),
-                _ingredientes.PegarIngredientePorNome(enumIngredientes.Bacon.ToString())
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.HamburguerCarne),
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.Queijo),
+                _ingredientes.PegarIngredientePorCodigo((int)enumIngredientes.Bacon)
                 },
             };
 
-            XBacon.Total = XBacon.Ingredientes.Sum(x => x.ValorIngrediente);
+            XBacon.Valor = XBacon.Ingredientes.Sum(x => x.ValorIngrediente);
 
             return XBacon;
 
@@ -81,7 +81,7 @@ namespace infraestrutura.memoria.repositorio
                 },
             };
 
-            xEgg.Total = xEgg.Ingredientes.Sum(x => x.ValorIngrediente);
+            xEgg.Valor = xEgg.Ingredientes.Sum(x => x.ValorIngrediente);
 
             return xEgg;
 
@@ -102,7 +102,7 @@ namespace infraestrutura.memoria.repositorio
                 },
             };
 
-            xEggBacon.Total = xEggBacon.Ingredientes.Sum(x => x.ValorIngrediente);
+            xEggBacon.Valor = xEggBacon.Ingredientes.Sum(x => x.ValorIngrediente);
 
             return xEggBacon;
 

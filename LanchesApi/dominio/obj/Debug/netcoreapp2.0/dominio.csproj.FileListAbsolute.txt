@@ -7,3 +7,12 @@ c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.
 c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.AssemblyInfo.cs
 c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.dll
 c:\users\gabriel.cordeiro\source\repos\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.pdb
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\bin\Debug\netcoreapp2.0\dominio.deps.json
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\bin\Debug\netcoreapp2.0\dominio.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\bin\Debug\netcoreapp2.0\dominio.pdb
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.csprojResolveAssemblyReference.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.AssemblyInfoInputs.cache
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.AssemblyInfo.cs
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.dll
+C:\Users\gabri\Documents\GitHub\Lanches\LanchesApi\dominio\obj\Debug\netcoreapp2.0\dominio.pdb

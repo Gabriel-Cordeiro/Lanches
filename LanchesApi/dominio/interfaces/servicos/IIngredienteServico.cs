@@ -8,5 +8,7 @@ namespace dominio.interfaces.servicos
     public interface IIngredienteServico
     {
         IEnumerable<Ingrediente> PegarTodosIngredientes();
+
+        Ingrediente PegarIngredientePorNome(string NomeIngrendiente);
     }
 }
