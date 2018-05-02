@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "LanchesApi",
+		"_postman_id": "6bbc74c7-9711-4d48-bf21-605969f85339",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TodosLanchesProntos",
+			"request": {
+				"url": "http://localhost:52495/api/Lanches",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "TodosIngredientes",
+			"request": {
+				"url": "http://localhost:52495/api/Ingredientes",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "LancheCustomizado",
+			"request": {
+				"url": "http://localhost:52495/api/Customizado",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\"NomeIngrediente\":\"Alface\"},\n\t{\"NomeIngrediente\":\"Queijo\"},\n\t{\"NomeIngrediente\":\"Ovo\"},\n\t{\"NomeIngrediente\":\"Bacon\"},\n\t{\"NomeIngrediente\":\"HamburguerCarne\"}\n\t\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
